@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Atlanta", "Atlanta", "{6E055156-8157-4F79-9DD9-FB98E9871D2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambda", "Lambda", "{AFBB4BAB-B159-422D-9853-4150DAECD3FE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{A1D0A512-C668-42E7-81B0-E069C2E7E055}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User", "User", "{1EED5E65-594B-4300-BAE5-F5716EB6D50B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RznMicroLambdaUserAdd", "RznMicroLambdaUserAdd\src\RznMicroLambdaUserAdd\RznMicroLambdaUserAdd.csproj", "{A6DAF384-5684-4F5F-903C-583F994DB172}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6DAF384-5684-4F5F-903C-583F994DB172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6DAF384-5684-4F5F-903C-583F994DB172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6DAF384-5684-4F5F-903C-583F994DB172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6DAF384-5684-4F5F-903C-583F994DB172}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AFBB4BAB-B159-422D-9853-4150DAECD3FE} = {6E055156-8157-4F79-9DD9-FB98E9871D2A}
+		{A1D0A512-C668-42E7-81B0-E069C2E7E055} = {AFBB4BAB-B159-422D-9853-4150DAECD3FE}
+		{1EED5E65-594B-4300-BAE5-F5716EB6D50B} = {A1D0A512-C668-42E7-81B0-E069C2E7E055}
+		{A6DAF384-5684-4F5F-903C-583F994DB172} = {1EED5E65-594B-4300-BAE5-F5716EB6D50B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5186905A-2827-40C7-92A5-CC3817A338EE}
+	EndGlobalSection
+EndGlobal
