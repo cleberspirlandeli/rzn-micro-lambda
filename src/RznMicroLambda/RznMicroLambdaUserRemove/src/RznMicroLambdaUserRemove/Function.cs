@@ -19,6 +19,7 @@ namespace RznMicroLambdaUserDelete
     public class Function
     {
         private const string TableName = "users";
+        private const string NameSpace = "RznMicroLambdaUserDelete";
         private readonly string AccessKeyId = Environment.GetEnvironmentVariable("AwsAccessKeyId");
         private readonly string AwsSecretAccessKey = Environment.GetEnvironmentVariable("AwsSecretAccessKey");
         private readonly string QueueUrl = Environment.GetEnvironmentVariable("QueueUrl");
@@ -55,7 +56,7 @@ namespace RznMicroLambdaUserDelete
         /// <returns></returns>
         public async Task FunctionHandler(SQSEvent evnt, ILambdaContext context)
         {
-            context.Logger.LogInformation($"Processed RznMicroLambdaUserDelete starting...");
+            context.Logger.LogInformation($"Processed {NameSpace} starting...");
             foreach (var message in evnt.Records)
             {
                 await ProcessMessageAsync(message, context);
@@ -74,7 +75,7 @@ namespace RznMicroLambdaUserDelete
             }
             catch (Exception ex)
             {
-                context.Logger.LogInformation($"Error processing RznMicroLambdaUserDelete the Lambda: \n {ex.Message}");
+                context.Logger.LogInformation($"Error processing {NameSpace} the Lambda: \n {ex.Message}");
             }
 
             await Task.CompletedTask;
