@@ -129,7 +129,7 @@ namespace RznMicroLambdaUserAdd
 }
 /*
  "{\"User\":{\"User\":{\"Id\":\"50d60674-bec2-4041-8579-55bf4e4dd0a0\",\"FullName\":\"Teste SQS Lambda\",\"DateBirth\":\"1992-12-18T00:00:00\",\"Active\":true,\"Gender\":0},\"Address\":{\"Id\":\"248061e9-8f25-4ee7-a1e6-0476d2d9ed4f\",\"IdUser\":\"50d60674-bec2-4041-8579-55bf4e4dd0a0\",\"ZipCode\":\"14412444\",\"Street\":\"Rua teste SQS Lambda NOVO\",\"Number\":123,\"AdditionalInformation\":\"Add info SQS Lambda\",\"TypeOfAddress\":0}}}"
- "eventSourceARN": "arn:aws:sqs:us-east-1:905418045759:rznapps-micro-sqs-dev-user",
+ "eventSourceARN": "arn:aws:sqs:us--1::x-sqs-dev-user",
 
 {
   "Records": [
@@ -146,8 +146,8 @@ namespace RznMicroLambdaUserAdd
       "messageAttributes": {},
       "md5OfBody": "{{{md5_of_body}}}",
       "eventSource": "aws:sqs",
-      "eventSourceARN": "arn:aws:sqs:us-east-1:905418045759:rznapps-micro-sqs-dev-user",
-      "awsRegion": "us-east-1"
+      "eventSourceARN": "arn:aws:sqs:us--1::x-sqs-dev-user",
+      "awsRegion": "us--1"
     }
   ]
 }
